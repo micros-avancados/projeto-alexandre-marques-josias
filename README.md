@@ -5,6 +5,7 @@ O dispositivo escolhido para esse projeto foi o Raspberry Pi, essa plataforma po
 Após a definição do projeto, foi iniciado a fase de testes e de pesquisa, em um primeiro momento foi aplicado testes utilizando o framework QtCreator C++, para construir uma aplicação que realiza-se a busca de dispositivos via Bluetooth para parear. Também foi instalado o sistema operacional Raspbian sem interface gráfica, porém utilizando o servidor xorg. Foi criado algumas tentativas de conseguir desenvolver a aplicação, porém o custo de tempo era alto de mais e foi realizado uma nova pesquisa para buscar uma solução de desenvolvimento nessa área. Com essa nova pesquisa, foi possível encontrar diversas aplicações com o uso do Raspberry Pi na área de coletas de dados usando OBD2, como o sistema AutoPi, que possui um dispositivo que fica conectado ao veículo e envia informações para um sistema em nuvem, que pode ser acessado de qualquer lugar do mundo. Então foi utilizado um projeto open-source, em linguagem python, para realizar essa tarefa.
 
 **Desenvolvimento Inicial do Projeto**
+
 1 - Instalado o sistema operacional Raspbian, com interface gráfica
 2 - Instalado o módulo de desenvolvimento do bluetooth, o bluez e demais bibliotecas
 3 - Instalado via pip a biblioteca obd, mais conhecida como pyobd
