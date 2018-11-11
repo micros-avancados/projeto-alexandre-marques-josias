@@ -7,13 +7,21 @@ Após a definição do projeto, foi iniciado a fase de testes e de pesquisa, em 
 **Desenvolvimento Inicial do Projeto**
 
 1 - Instalado o sistema operacional Raspbian, com interface gráfica
+
 2 - Instalado o módulo de desenvolvimento do bluetooth, o bluez e demais bibliotecas
+
 3 - Instalado via pip a biblioteca obd, mais conhecida como pyobd
+
 4 - Realizado testes com essas libs, constatado funcionamento correto, pois ficava buscando o ELM237
+
 5 - Adquirir o adaptador ELM237
+
 6 - Após a aquisição, realizar testes para buscar as informações através da aplicação que vai ser desenvolvida e será baseada em um projeto Alemão, o PYOBD. Link do site >> http://www.obdtester.com/pyobd
+
 7 - Será realizado a instalação do mysql
+
 8 - Será desenvolvido um script para salvar os dados em uma base de dados, ou seja, os dados serão salvos conforme a sua coleta e após poderão ser trabalhados.
+
 9 - Quando iniciar o Raspberry Pi a aplicação deverá iniciar automaticamente.
 
 Em um primeiro momento essa aplicação será apenas para coletar informações e salvar em uma base de dados instalada no próprio Raspberry.
