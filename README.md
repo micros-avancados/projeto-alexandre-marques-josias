@@ -16,7 +16,7 @@ Após a definição do projeto, foi iniciado a fase de testes e de pesquisa, em 
 
 5 - Adquirir o adaptador ELM237
 
-6 - Após a aquisição, realizar testes para buscar as informações através da aplicação que vai ser desenvolvida e será baseada em um projeto Alemão, o PYOBD. Link do site >> http://www.obdtester.com/pyobd
+6 - Após a aquisição, realizar testes para buscar as informações através da aplicação que vai ser desenvolvida e será baseada em um projeto Alemão, o PYOBD.
 
 7 - Será realizado a instalação do mysql
 
