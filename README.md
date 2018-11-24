@@ -36,3 +36,6 @@ coletar as informações do veículo via comunicação OBD. Foi continuado o uso
 
 **Raspberry Utilizado**
 ![pi](https://user-images.githubusercontent.com/22698776/48963682-1ced5100-ef7f-11e8-9919-a4effd1f010c.jpg)
+
+**Módulo OBD2**
+
