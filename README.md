@@ -37,6 +37,9 @@ coletar as informações do veículo via comunicação OBD. Foi continuado o uso
 **Figura 1 - Raspberry Utilizado**
 ![pi](https://user-images.githubusercontent.com/22698776/48963682-1ced5100-ef7f-11e8-9919-a4effd1f010c.jpg)
 
+**Figura 2 - Módulo OBD2**
+
+
 **Figura 3 - Software de Monitoramento IHM**
 ![tela_inicial](https://user-images.githubusercontent.com/22698776/48963712-c5031a00-ef7f-11e8-8594-439fc55688d7.png)
 
