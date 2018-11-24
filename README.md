@@ -34,17 +34,43 @@ Após a aquisição do dispositivo ELM237, foi possível realizar alguns testes 
 Após diversos testes e análises, foi reavaliado o desenvolvimento do sistema, mantendo o objetivo principal, de criar um sistema para
 coletar as informações do veículo via comunicação OBD. Foi continuado o uso do Raspberry Pi, o sistema operacional Linux Raspbian, e instalado os módulos python e bluetooth.
 
+Foi realizada uma instalação nova do sistema operacional Raspbian e realizado todas as configurações do zero, com isso foi possível atualizar os repositorios novamente e executar os scripts de desenvolvimento em python. Para ocorrer a coleta das informações dos veículos de forma correta foi seguido uma instalação de forma procedural, de alguns scripts.
+
+1 - sudo apt-get install python-wxtools
+
+2 - sudo apt-get install bluetooth bluez blueman
+
+3 - Reinicie o dispositivo
+
+Todos esses procedimento listados acima, foram realizados em um dispositivo igual ao da Figura 1.
+
 **Figura 1 - Raspberry Utilizado**
 ![pi](https://user-images.githubusercontent.com/22698776/48963682-1ced5100-ef7f-11e8-9919-a4effd1f010c.jpg)
+
+O módulo OBD2, foi plugado em 3 modelos de carros diferentes para realização de testes de pareamento, cada veículo possui
+o conector OBD em lugares diferentes, os carros que foram possíveis realizar os testes iniciais foram, Clio da Renault, Vitara da
+Suzuki e Fiesta da Ford, ambos reconheceram o dispositivo perfeitamente e realizaram a coleta de dados através de um script em python.
+A Figura 2 representa o modelo de OBD2, ESP237, utilizado para o experimento.
 
 **Figura 2 - Módulo OBD2**
 ![obd2](https://user-images.githubusercontent.com/22698776/48963783-7a829d00-ef81-11e8-941e-6d9cc6ed6c61.jpg)
 
+Como se trata de um sistema embarcado, deve realizar uma interação com o usuário, exibindo informações sobre o veículo, para isso
+foi criado um software que exibe os dados que foram inseridos na base de dados pelo script python, e esses registros, são informações
+coletadas pelo adaptador OBD2, que realiza uma leitura dos sensores do veículo. A Figura 3 exibe a interface principal onde os dados são
+exibidos em uma tabela e ao selecionar uma linha são replicados nos dashboards quadrados acima dela. O sistema foi baseado em requisitos
+de software para IHM, ou seja a interface gráfica é precaria.
+
 **Figura 3 - Software de Monitoramento IHM**
 ![tela_inicial](https://user-images.githubusercontent.com/22698776/48963712-c5031a00-ef7f-11e8-8594-439fc55688d7.png)
 
+Na Figura 4 é possivel ver um gráfico que mostra os valores calculados que estão salvos na base de dados.
+
 **Figura 4 - Tela de Gráficos do Sistema**
 ![grafico](https://user-images.githubusercontent.com/22698776/48963714-c92f3780-ef7f-11e8-94bc-0dbfa01cc438.png)
+
+Na Figura 5 é exibido a tela de alarmes, onde será possível ver as falhas do sistema, existe uma média que foi definida
+para mostrar a célula da tabela quando determinado valor de RPM ou Aceleração estiver fora do comum.
 
 **Figura 5 - Tela de Alarmes**
 ![alarmes](https://user-images.githubusercontent.com/22698776/48963717-cd5b5500-ef7f-11e8-9c5a-a0fa691e7e96.png)
