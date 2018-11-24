@@ -80,4 +80,8 @@ foi o MySQL Server, onde foi criado uma base de dados de codenome log_system. A 
 dados.
 
 **Figura 6 - Modelagem do Banco de Dados**
+
+
 ![model](https://user-images.githubusercontent.com/22698776/48963869-c33b5580-ef83-11e8-8731-1f3454f1420a.png)
+
+Para que esse projeto pude-se ser feito, foi utilizado as seguintes linguagens de programção: Java e Python.
