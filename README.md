@@ -1,3 +1,5 @@
+**Documentação de Sistema Embarcado**
+
 O projeto consiste em criar um sistema embarcado para coletar informações de um veiculo, salvar
 em uma base dados local e após esses dados serem trabalhados em uma aplicação Alto Nível.
 O dispositivo escolhido para esse projeto foi o Raspberry Pi, essa plataforma possui todas as características de um computador convencional, possuindo opção de instalação de sistema operacional, placa WiFi, Bluetooth, entradas USB e GPIOs para manipulação de sensores e atuadores. Além do hardware que compõe a placa, o seu custo também foi levado em consideração para esse projeto. 
