@@ -38,7 +38,7 @@ coletar as informações do veículo via comunicação OBD. Foi continuado o uso
 ![pi](https://user-images.githubusercontent.com/22698776/48963682-1ced5100-ef7f-11e8-9919-a4effd1f010c.jpg)
 
 **Figura 2 - Módulo OBD2**
-
+![obd](https://user-images.githubusercontent.com/22698776/48963699-75bce980-ef7f-11e8-93c4-e1cc8620f75e.png)
 
 **Figura 3 - Software de Monitoramento IHM**
 ![tela_inicial](https://user-images.githubusercontent.com/22698776/48963712-c5031a00-ef7f-11e8-8594-439fc55688d7.png)
