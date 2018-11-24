@@ -34,17 +34,14 @@ Após a aquisição do dispositivo ELM237, foi possível realizar alguns testes 
 Após diversos testes e análises, foi reavaliado o desenvolvimento do sistema, mantendo o objetivo principal, de criar um sistema para
 coletar as informações do veículo via comunicação OBD. Foi continuado o uso do Raspberry Pi, o sistema operacional Linux Raspbian, e instalado os módulos python e bluetooth.
 
-**Raspberry Utilizado**
+**Figura 1 - Raspberry Utilizado**
 ![pi](https://user-images.githubusercontent.com/22698776/48963682-1ced5100-ef7f-11e8-9919-a4effd1f010c.jpg)
 
-**Módulo OBD2**
-![obd](https://user-images.githubusercontent.com/22698776/48963699-75bce980-ef7f-11e8-93c4-e1cc8620f75e.png)
-
-**Software de Monitoramento IHM**
+**Figura 3 - Software de Monitoramento IHM**
 ![tela_inicial](https://user-images.githubusercontent.com/22698776/48963712-c5031a00-ef7f-11e8-8594-439fc55688d7.png)
 
-**Tela de Gráficos do Sistema**
+**Figura 4 - Tela de Gráficos do Sistema**
 ![grafico](https://user-images.githubusercontent.com/22698776/48963714-c92f3780-ef7f-11e8-94bc-0dbfa01cc438.png)
 
-**Tela de Alarmes**
+**Figura 5 - Tela de Alarmes**
 ![alarmes](https://user-images.githubusercontent.com/22698776/48963717-cd5b5500-ef7f-11e8-9c5a-a0fa691e7e96.png)
