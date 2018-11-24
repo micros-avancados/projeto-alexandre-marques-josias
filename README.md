@@ -87,3 +87,7 @@ dados.
 ![model](https://user-images.githubusercontent.com/22698776/48963869-c33b5580-ef83-11e8-8731-1f3454f1420a.png)
 
 Para que esse projeto pude-se ser feito, foi utilizado as seguintes linguagens de programção: Java e Python.
+
+**Obs: A inicialização de scripts em python para coleta e aplicação gráfica, executam na inicialização do sistema operacional
+para isso ser possível, ambas foram adicionadas em aplicações de sessão do linux. A inserção de registros também ocorre de forma
+automatíca e a busca é controlada por uma Thread, que fica atualizando de 1 em 1 segundo os dados.**
