@@ -39,3 +39,12 @@ coletar as informações do veículo via comunicação OBD. Foi continuado o uso
 
 **Módulo OBD2**
 ![obd](https://user-images.githubusercontent.com/22698776/48963699-75bce980-ef7f-11e8-93c4-e1cc8620f75e.png)
+
+**Software de Monitoramento IHM**
+![tela_inicial](https://user-images.githubusercontent.com/22698776/48963712-c5031a00-ef7f-11e8-8594-439fc55688d7.png)
+
+**Tela de Gráficos do Sistema**
+![grafico](https://user-images.githubusercontent.com/22698776/48963714-c92f3780-ef7f-11e8-94bc-0dbfa01cc438.png)
+
+**Tela de Alarmes**
+![alarmes](https://user-images.githubusercontent.com/22698776/48963717-cd5b5500-ef7f-11e8-9c5a-a0fa691e7e96.png)
