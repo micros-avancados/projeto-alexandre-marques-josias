@@ -74,3 +74,10 @@ para mostrar a célula da tabela quando determinado valor de RPM ou Aceleração
 
 **Figura 5 - Tela de Alarmes**
 ![alarmes](https://user-images.githubusercontent.com/22698776/48963717-cd5b5500-ef7f-11e8-9c5a-a0fa691e7e96.png)
+
+Todos esses dados são salvos em uma base de dados que fica alocada no próprio Raspberry Pi, o sistema de banco de dados instalado
+foi o MySQL Server, onde foi criado uma base de dados de codenome log_system. A Figura 6 exibe a modelagem da tabela desse banco de 
+dados.
+
+**Figura 6 - Modelagem do Banco de Dados**
+![model](https://user-images.githubusercontent.com/22698776/48963869-c33b5580-ef83-11e8-8731-1f3454f1420a.png)
