@@ -29,3 +29,10 @@ Foi instalado a versão xubuntu no Raspberry Pi, e adaptado o projeto PyOBD para
 Foi criado uma base de dados denominada de car_system com uma unica tabela denominada de logs, nessa tabela inicialmente foram definidos os atributos id, rpm (rotações por minuto), temperatura do motor e velocidade (Km). O sistema de banco de dados está instalado na própria plataforma. Após a instalação e a base de dados estar executando corretamente, foi adaptado o projeto PyOBD para iniciar quando a plataforma iniciar, para isso foi definido um procedimento na crontab do Linux para iniciar o colector e a interface IHM, onde irá salvar os dados na base de dados MySQL, através de um script em python que realiza uma comunicação com o banco de dados e insere esses dados na tabela. Para isso foi utilizado uma lib MySQL for Python. Os dados simulados atualmente estão statics, pois só será possível realizar o teste final quando o ELM237 chegar.
 
 Após a aquisição do dispositivo ELM237, foi possível realizar alguns testes utilizando a aplicação. Como o pareamento e a exibição desses dados em um display, utilzando o sistema desenvolvido para o Raspberry Pi. O projeto está praticamente pronto, a necessidade de realizar alguns ajustes na parte de salvar os dados e realizar a inicialização do script automaticamente.
+
+**Etapa Final do Projeto**
+Após diversos testes e análises, foi reavaliado o desenvolvimento do sistema, mantendo o objetivo principal, de criar um sistema para
+coletar as informações do veículo via comunicação OBD. Foi continuado o uso do Raspberry Pi, o sistema operacional Linux Raspbian, e instalado os módulos python e bluetooth.
+
+**Raspberry Utilizado**
+
