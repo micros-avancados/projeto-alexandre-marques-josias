@@ -19,13 +19,25 @@ public class GaugeView
     public GaugeView()
     {
         initComponents();
-    
 //        tableRender();
+//        refreshContent();
     }
     
     private void refreshContent()
     {
-        mountTable();
+        while( true )
+        {
+            try
+            {
+                Thread.sleep( 1000 );
+                mountTable();
+            }
+            
+            catch( InterruptedException e )
+            {
+                throw new RuntimeException( e );
+            }
+        }
     }
     
     private void tableRender()
