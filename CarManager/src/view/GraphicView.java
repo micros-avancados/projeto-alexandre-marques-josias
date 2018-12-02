@@ -28,23 +28,6 @@ public class GraphicView
         setResizable( false );
     }
     
-    private void runtimeProcess()
-    {
-        while( true )
-        {
-            try
-            {
-                Thread.sleep( 1000 );
-                refresh();
-            }
-            
-            catch( Exception e )
-            {
-                throw new RuntimeException( e );
-            }
-        }
-    }
-    
     private void refresh()
     {
         try
@@ -55,12 +38,11 @@ public class GraphicView
             {
                 String[] logs = c.getLogs().split( "," );
                 
-                pieDataset.setValue( "RPM", new Integer( logs[0] ) );
-                pieDataset.setValue( "Km", new Integer( logs[1] ) );
-                pieDataset.setValue( "Aceleração", new Integer( logs[2] ) );
-                pieDataset.setValue( "Carga", new Integer( logs[3] ) );
-                pieDataset.setValue( "Tanque", new Integer( logs[4] ) );
-                pieDataset.setValue( "Tanque", new Integer( logs[5] ) );
+                pieDataset.setValue( "RPM", Long.parseLong( logs[1] ) );
+                pieDataset.setValue( "Km", Double.parseDouble( logs[2] ) );
+                pieDataset.setValue( "Aceleração", Double.parseDouble( logs[3] ) );
+                pieDataset.setValue( "Carregamento Bateria", Double.parseDouble( logs[4] ) );
+                pieDataset.setValue( "Reservatório", Double.parseDouble( logs[5] ) );
             }
         }
         
@@ -73,11 +55,11 @@ public class GraphicView
     private void initComponents()
     {
         setLayout( new BorderLayout() );
-        setTitle( "Gerenciamento do Sistema Veicular" );
+        setTitle( "Monitoramento do Sistema" );
         setSize( 800, 600 );
         
-        runtimeProcess();
-        chart = ChartFactory.createPieChart( "Gerenciamento Gráfico do Sistema", pieDataset, true, true, false );
+        refresh();
+        chart = ChartFactory.createPieChart( "Monitoramento Gráfico do Sistema", pieDataset, true, true, false );
         
         add( new ChartPanel( chart ), BorderLayout.CENTER );
         add( btnExit, BorderLayout.SOUTH );

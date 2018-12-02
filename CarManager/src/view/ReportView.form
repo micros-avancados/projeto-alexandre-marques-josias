@@ -76,9 +76,9 @@
                 <Column editable="false" title="Horar&#xed;o" type="java.lang.Object"/>
                 <Column editable="false" title="RPM" type="java.lang.Object"/>
                 <Column editable="false" title="Km/h" type="java.lang.Object"/>
-                <Column editable="false" title="Acelerador" type="java.lang.Object"/>
-                <Column editable="false" title="Carga" type="java.lang.Object"/>
-                <Column editable="false" title="N&#xed;vel Combustivel" type="java.lang.Object"/>
+                <Column editable="false" title="Acelera&#xe7;&#xe3;o (%)" type="java.lang.Object"/>
+                <Column editable="false" title="Carregamento Bateria" type="java.lang.Object"/>
+                <Column editable="false" title="Reservat&#xf3;rio" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

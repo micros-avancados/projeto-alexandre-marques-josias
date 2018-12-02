@@ -19,25 +19,7 @@ public class GaugeView
     public GaugeView()
     {
         initComponents();
-//        tableRender();
-//        refreshContent();
-    }
-    
-    private void refreshContent()
-    {
-        while( true )
-        {
-            try
-            {
-                Thread.sleep( 1000 );
-                mountTable();
-            }
-            
-            catch( InterruptedException e )
-            {
-                throw new RuntimeException( e );
-            }
-        }
+        tableRender();
     }
     
     private void tableRender()
@@ -67,11 +49,11 @@ public class GaugeView
                 model.addRow( new Object[]
                 {
                     logs[0],
-                    logs[1],
-                    logs[2],
-                    logs[3],
+                    Long.parseLong( logs[1] )     / 10000000,
+                    Double.parseDouble( logs[2] ) / 1000000000,
+                    Double.parseDouble( logs[3] ) / 1000000000,
                     logs[4],
-                    logs[5]
+                    Double.parseDouble( logs[5] ) / 1000000000
                 });
             }
         }
@@ -132,7 +114,7 @@ public class GaugeView
 
             },
             new String [] {
-                "Horarío", "RPM", "Km/h", "Acelerador", "Carga", "Nível Combustivel"
+                "Horarío", "RPM", "Km/h", "Aceleração (%)", "Carregamento Bateria", "Reservatório"
             }
         ) {
             boolean[] canEdit = new boolean [] {
