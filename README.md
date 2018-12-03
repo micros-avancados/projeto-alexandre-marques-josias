@@ -34,15 +34,15 @@ Após a aquisição do dispositivo ELM237, foi possível realizar alguns testes 
 
 **Etapa Final do Projeto**
 Após diversos testes e análises, foi reavaliado o desenvolvimento do sistema, mantendo o objetivo principal, de criar um sistema para
-coletar as informações do veículo via comunicação OBD. Foi continuado o uso do Raspberry Pi, o sistema operacional Linux Raspbian, e instalado os módulos python e bluetooth.
+coletar as informações do veículo via comunicação OBD. Foi continuado o uso do Raspberry Pi, o sistema operacional Linux Xubuntu 16.04, e instalado os módulos python e bluetooth.
 
-Foi realizada uma instalação nova do sistema operacional Raspbian e realizado todas as configurações do zero, com isso foi possível atualizar os repositorios novamente e executar os scripts de desenvolvimento em python. Para ocorrer a coleta das informações dos veículos de forma correta foi seguido uma instalação de forma procedural, de alguns scripts.
+Foi realizada uma instalação nova do sistema operacional Xubuntu e realizado todas as configurações do zero, com isso foi possível atualizar os repositorios novamente e executar os scripts de desenvolvimento em python. Para ocorrer a coleta das informações dos veículos de forma correta foi seguido uma instalação de forma procedural, de alguns scripts.
 
 1 - sudo apt-get install python-wxtools
 
 2 - sudo apt-get install bluetooth bluez blueman
 
-3 - Reinicie o dispositivo
+3 - Reiniciado o dispositivo
 
 Todos esses procedimento listados acima, foram realizados em um dispositivo igual ao da Figura 1.
 
