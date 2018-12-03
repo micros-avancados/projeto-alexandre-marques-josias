@@ -88,6 +88,8 @@ dados.
 
 Para que esse projeto pude-se ser feito, foi utilizado as seguintes linguagens de programção: Java e Python.
 
+Podemos concluir que o projeto funcionou corretamente, foi realizado formatação dos valores e ajuste no gráfico. 
+
 **Obs: A inicialização de scripts em python para coleta e aplicação gráfica, executam na inicialização do sistema operacional
 para isso ser possível, ambas foram adicionadas em aplicações de sessão do linux. A inserção de registros também ocorre de forma
 automatíca e a busca é controlada por uma Thread, que fica atualizando de 1 em 1 segundo os dados.**
