@@ -49,8 +49,6 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="ggThro" min="-2" pref="170" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="ggLoad" min="-2" pref="170" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="ggfuel" min="-2" pref="170" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -73,7 +71,6 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="ggThro" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
-                  <Component id="ggLoad" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
                   <Component id="ggfuel" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="22" max="32767" attributes="0"/>
@@ -108,12 +105,11 @@
         <Component class="javax.swing.JTable" name="tbSystem">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="6" rowCount="0">
+              <Table columnCount="5" rowCount="0">
                 <Column editable="false" title="Horar&#xed;o" type="java.lang.Object"/>
                 <Column editable="false" title="RPM" type="java.lang.Object"/>
                 <Column editable="false" title="Km/h" type="java.lang.Object"/>
                 <Column editable="false" title="Acelera&#xe7;&#xe3;o (%)" type="java.lang.Object"/>
-                <Column editable="false" title="Carregamento Bateria" type="java.lang.Object"/>
                 <Column editable="false" title="Reservat&#xf3;rio" type="java.lang.Object"/>
               </Table>
             </Property>
@@ -180,12 +176,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="ggThro">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="ggLoad">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="horizontalAlignment" type="int" value="0"/>

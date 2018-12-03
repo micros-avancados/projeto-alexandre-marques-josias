@@ -1,6 +1,7 @@
 package view;
 
 import controller.CarDAO;
+import java.text.NumberFormat;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import model.Car;
@@ -13,11 +14,14 @@ public class GaugeView
     extends 
         javax.swing.JFrame 
 {
+    private NumberFormat nf = NumberFormat.getInstance();
+    
     /**
      * Creates new form GaugeView
      */
     public GaugeView()
     {
+        nf.setMaximumFractionDigits( 2 );
         initComponents();
         tableRender();
     }
@@ -49,11 +53,10 @@ public class GaugeView
                 model.addRow( new Object[]
                 {
                     logs[0],
-                    Long.parseLong( logs[1] )     / 10000000,
-                    Double.parseDouble( logs[2] ) / 1000000000,
-                    Double.parseDouble( logs[3] ) / 1000000000,
-                    logs[4],
-                    Double.parseDouble( logs[5] ) / 1000000000
+                    Long.parseLong( logs[1] ) / 10000000,
+                    nf.format( Double.parseDouble( logs[2] ) / 1000000000 ),
+                    nf.format( ( Double.parseDouble( logs[3] ) / 100000000 ) % 2 ),
+                    nf.format( Double.parseDouble( logs[5] ) / 1000000000 )
                 });
             }
         }
@@ -72,8 +75,7 @@ public class GaugeView
             ggRpm.setText( tbSystem.getValueAt( tbSystem.getSelectedRow(), 1 ).toString() );
             ggMph.setText( tbSystem.getValueAt( tbSystem.getSelectedRow(), 2 ).toString() );
             ggThro.setText( tbSystem.getValueAt( tbSystem.getSelectedRow(), 3 ).toString() );
-            ggLoad.setText( tbSystem.getValueAt( tbSystem.getSelectedRow(), 4 ).toString() );
-            ggfuel.setText( tbSystem.getValueAt( tbSystem.getSelectedRow(), 5 ).toString() );
+            ggfuel.setText( tbSystem.getValueAt( tbSystem.getSelectedRow(), 4 ).toString() );
         }
     }
 
@@ -93,7 +95,6 @@ public class GaugeView
         ggRpm = new javax.swing.JTextField();
         ggMph = new javax.swing.JTextField();
         ggThro = new javax.swing.JTextField();
-        ggLoad = new javax.swing.JTextField();
         ggfuel = new javax.swing.JTextField();
         btGrafic = new javax.swing.JButton();
         btMonitor = new javax.swing.JButton();
@@ -114,11 +115,11 @@ public class GaugeView
 
             },
             new String [] {
-                "Horarío", "RPM", "Km/h", "Aceleração (%)", "Carregamento Bateria", "Reservatório"
+                "Horarío", "RPM", "Km/h", "Aceleração (%)", "Reservatório"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -143,9 +144,6 @@ public class GaugeView
 
         ggThro.setEditable(false);
         ggThro.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-
-        ggLoad.setEditable(false);
-        ggLoad.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         ggfuel.setEditable(false);
         ggfuel.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -190,8 +188,6 @@ public class GaugeView
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(ggThro, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(ggLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(ggfuel, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -207,7 +203,6 @@ public class GaugeView
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ggThro, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ggLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ggfuel, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -281,7 +276,6 @@ public class GaugeView
     private javax.swing.JButton btGrafic;
     private javax.swing.JButton btMonitor;
     private javax.swing.JTextField ggHour;
-    private javax.swing.JTextField ggLoad;
     private javax.swing.JTextField ggMph;
     private javax.swing.JTextField ggRpm;
     private javax.swing.JTextField ggThro;

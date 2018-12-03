@@ -1,6 +1,7 @@
 package view;
 
 import controller.CarDAO;
+import java.text.NumberFormat;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import model.Car;
@@ -13,11 +14,14 @@ public class ReportView
     extends 
         javax.swing.JFrame 
 {
+    private NumberFormat nf = NumberFormat.getInstance();
+    
     /**
      * Creates new form GaugeView
      */
     public ReportView()
     {
+        nf.setMaximumFractionDigits( 2 );
         initComponents();
         tableRender();
     }
@@ -58,8 +62,8 @@ public class ReportView
                     model.addRow( new Object[]
                     {
                         logs[0],
-                        Long.parseLong( logs[1] )     / 10000000,
-                        value
+                        Long.parseLong( logs[1] ) / 10000000,
+                        nf.format( value )
                     });
                 }
             }
