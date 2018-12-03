@@ -64,7 +64,7 @@ exibidos em uma tabela e ao selecionar uma linha são replicados nos dashboards 
 de software para IHM, ou seja a interface gráfica é precaria.
 
 **Figura 3 - Software de Monitoramento IHM**
-![tela_inicial](https://user-images.githubusercontent.com/22698776/48963712-c5031a00-ef7f-11e8-8594-439fc55688d7.png)
+![ft-1](https://user-images.githubusercontent.com/22698776/49408328-f5e30c00-f742-11e8-822e-ea5583964003.png)
 
 Na Figura 4 é possivel ver um gráfico que mostra os valores calculados que estão salvos na base de dados.
 
