@@ -51,15 +51,17 @@ public class ReportView
             {
                 String[] logs = c.getLogs().split( "," );
                 
-                model.addRow( new Object[]
+                Double value = Double.parseDouble( logs[2] ) / 1000000000;
+                
+                if( value > 50.0 )
                 {
-                    logs[0],
-                    Long.parseLong( logs[1] )     / 10000000,
-                    Double.parseDouble( logs[2] ) / 1000000000,
-                    Double.parseDouble( logs[3] ) / 1000000000,
-                    logs[4],
-                    Double.parseDouble( logs[5] ) / 1000000000
-                });
+                    model.addRow( new Object[]
+                    {
+                        logs[0],
+                        Long.parseLong( logs[1] )     / 10000000,
+                        value
+                    });
+                }
             }
         }
         
@@ -99,11 +101,11 @@ public class ReportView
 
             },
             new String [] {
-                "Horarío", "RPM", "Km/h", "Aceleração (%)", "Carregamento Bateria", "Reservatório"
+                "Horarío", "RPM", "Km/h"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
+                false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
