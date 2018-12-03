@@ -69,13 +69,13 @@ de software para IHM, ou seja a interface gráfica é precaria.
 Na Figura 4 é possivel ver um gráfico que mostra os valores calculados que estão salvos na base de dados.
 
 **Figura 4 - Tela de Gráficos do Sistema**
-![grafico](https://user-images.githubusercontent.com/22698776/48963714-c92f3780-ef7f-11e8-94bc-0dbfa01cc438.png)
+![ft3](https://user-images.githubusercontent.com/22698776/49408349-04c9be80-f743-11e8-9ec2-5ed9f698d60b.png)
 
 Na Figura 5 é exibido a tela de alarmes, onde será possível ver as falhas do sistema, existe uma média que foi definida
 para mostrar a célula da tabela quando determinado valor de RPM ou Aceleração estiver fora do comum.
 
 **Figura 5 - Tela de Alarmes**
-![alarmes](https://user-images.githubusercontent.com/22698776/48963717-cd5b5500-ef7f-11e8-9c5a-a0fa691e7e96.png)
+![ft2](https://user-images.githubusercontent.com/22698776/49408353-0c896300-f743-11e8-889c-93df0e07fbdd.png)
 
 Todos esses dados são salvos em uma base de dados que fica alocada no próprio Raspberry Pi, o sistema de banco de dados instalado
 foi o MySQL Server, onde foi criado uma base de dados de codenome log_system. A Figura 6 exibe a modelagem da tabela desse banco de 
