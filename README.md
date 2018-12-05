@@ -64,18 +64,18 @@ exibidos em uma tabela e ao selecionar uma linha são replicados nos dashboards 
 de software para IHM, ou seja a interface gráfica é precaria.
 
 **Figura 3 - Software de Monitoramento IHM**
-![tela_inicial](https://user-images.githubusercontent.com/22698776/48963712-c5031a00-ef7f-11e8-8594-439fc55688d7.png)
+![ft-1](https://user-images.githubusercontent.com/22698776/49408328-f5e30c00-f742-11e8-822e-ea5583964003.png)
 
 Na Figura 4 é possivel ver um gráfico que mostra os valores calculados que estão salvos na base de dados.
 
 **Figura 4 - Tela de Gráficos do Sistema**
-![grafico](https://user-images.githubusercontent.com/22698776/48963714-c92f3780-ef7f-11e8-94bc-0dbfa01cc438.png)
+![ft3](https://user-images.githubusercontent.com/22698776/49408349-04c9be80-f743-11e8-9ec2-5ed9f698d60b.png)
 
 Na Figura 5 é exibido a tela de alarmes, onde será possível ver as falhas do sistema, existe uma média que foi definida
 para mostrar a célula da tabela quando determinado valor de RPM ou Aceleração estiver fora do comum.
 
 **Figura 5 - Tela de Alarmes**
-![alarmes](https://user-images.githubusercontent.com/22698776/48963717-cd5b5500-ef7f-11e8-9c5a-a0fa691e7e96.png)
+![ft2](https://user-images.githubusercontent.com/22698776/49408353-0c896300-f743-11e8-889c-93df0e07fbdd.png)
 
 Todos esses dados são salvos em uma base de dados que fica alocada no próprio Raspberry Pi, o sistema de banco de dados instalado
 foi o MySQL Server, onde foi criado uma base de dados de codenome log_system. A Figura 6 exibe a modelagem da tabela desse banco de 
@@ -87,6 +87,8 @@ dados.
 ![model](https://user-images.githubusercontent.com/22698776/48963869-c33b5580-ef83-11e8-8731-1f3454f1420a.png)
 
 Para que esse projeto pude-se ser feito, foi utilizado as seguintes linguagens de programção: Java e Python.
+
+Podemos concluir que o projeto funcionou corretamente, foi realizado formatação dos valores e ajuste no gráfico. 
 
 **Obs: A inicialização de scripts em python para coleta e aplicação gráfica, executam na inicialização do sistema operacional
 para isso ser possível, ambas foram adicionadas em aplicações de sessão do linux. A inserção de registros também ocorre de forma
