@@ -115,7 +115,7 @@ public class GaugeView
 
             },
             new String [] {
-                "Horarío", "RPM", "Km/h", "Aceleração (%)", "Reservatório"
+                "Horário", "RPM", "km/h", "Aceleração (%)", "Reservatório"
             }
         ) {
             boolean[] canEdit = new boolean [] {

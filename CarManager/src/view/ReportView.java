@@ -105,7 +105,7 @@ public class ReportView
 
             },
             new String [] {
-                "Horarío", "RPM", "Km/h"
+                "Horário", "RPM", "km/h"
             }
         ) {
             boolean[] canEdit = new boolean [] {
